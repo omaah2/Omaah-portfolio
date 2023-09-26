@@ -9,12 +9,11 @@ Welcome to my portfolio website! This is a showcase of my skills, projects, and 
 - [Installation](#installation)
 - [Deployment](#deployment)
 
-
 ## About
 
 This portfolio website serves as a central hub for presenting my work and providing information about my background as a developer. It's designed to highlight my skills, showcase my projects, and make it easy for visitors to get in touch with me.
 
-You can visit the live website here: [Portfolio Website]()
+You can visit the live website here: [Portfolio Website](https://omaah-portfolio.vercel.app/)
 
 ## Technologies Used
 
@@ -39,7 +38,24 @@ You can visit the live website here: [Portfolio Website]()
 ## Installation
 
 To run this project locally,
- Clone the repository:
+Clone the repository:
 
-   ```bash
-   git clone 
+````bash
+git clone https://github.com/omaah2/Omaah-portfolio.git
+
+
+Navigate to the project directory:
+
+ ````bash
+cd omaah-portfolio
+
+Install the necessary dependencies:
+
+
+````bash
+npm install
+
+After installing the dependencies, you can start the development server:
+
+````bash
+npm start
