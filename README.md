@@ -46,16 +46,16 @@ git clone https://github.com/omaah2/Omaah-portfolio.git
 
 Navigate to the project directory:
 
- ````bash
+ 
 cd omaah-portfolio
 
 Install the necessary dependencies:
 
 
-````bash
+
 npm install
 
 After installing the dependencies, you can start the development server:
 
-````bash
+
 npm start
