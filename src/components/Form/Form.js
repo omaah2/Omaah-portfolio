@@ -58,7 +58,7 @@ const Form = () => {
     }
 
     // Open the user's email client with the composed email content
-    window.location.href = `mailto:recipient@example.com?subject=${
+    window.location.href = `mailto:ummkhaladoluwatosin@gmail.com?subject=${
       data.subject
     }&body=${encodeURIComponent(
       `Name: ${data.name}%0D%0AEmail: ${data.email}%0D%0ASubject: ${data.subject}%0D%0AMessage: ${data.message}`
