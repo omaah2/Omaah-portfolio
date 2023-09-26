@@ -1,5 +1,4 @@
 import "./Form.css";
-
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/ReactToastify.min.css";
@@ -13,7 +12,7 @@ const Form = () => {
     );
   }
 
-  const sendEmail = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     const formData = new FormData(form.current);
@@ -58,47 +57,12 @@ const Form = () => {
       });
     }
 
-    // Create an object with the email data to send
-    const emailData = {
-      from_email: data.email,
-      from_name: data.name,
-      subject: data.subject,
-      message: data.message,
-    };
-
-    // Send the email using ImprovMX
-    try {
-      const response = await fetch(
-        "https://api.improvmx.com/v1/messages/send",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer sk_f05b3e816433439082a953f3dde74d0c`, // Replace with your ImprovMX API key
-          },
-          body: JSON.stringify(emailData),
-        }
-      );
-
-      if (response.status === 200) {
-        return toast.success("Message sent", {
-          type: "success",
-          theme: "dark",
-          autoClose: 4000,
-        });
-      } else {
-        return toast.error("Oops! An error occurred, please try again", {
-          type: "info",
-          theme: "dark",
-        });
-      }
-    } catch (error) {
-      console.error(error);
-      return toast.error("Oops! An error occurred, please try again", {
-        type: "info",
-        theme: "dark",
-      });
-    }
+    // Open the user's email client with the composed email content
+    window.location.href = `mailto:recipient@example.com?subject=${
+      data.subject
+    }&body=${encodeURIComponent(
+      `Name: ${data.name}%0D%0AEmail: ${data.email}%0D%0ASubject: ${data.subject}%0D%0AMessage: ${data.message}`
+    )}`;
 
     e.target.reset();
   };
