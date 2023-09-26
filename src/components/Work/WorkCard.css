@@ -1,0 +1,127 @@
+.project-heading {
+  font-size: 40px;
+  text-align: center;
+  padding: 4rem 0 3rem 0;
+}
+.project-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding-bottom: 5rem;
+}
+.project-card {
+  background: #1a1919;
+  padding: 1.2rem 1rem;
+  /* box-shadow: 15px 15px 30px #2e2d2d,
+  -15px -15px 30px #202020;
+  border-radius: 20px; */
+}
+.project-card img {
+  width: 100%;
+}
+.project-title {
+  color: #fff;
+  padding: 1rem 0;
+}
+.pro-details p {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.pro-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.pro-btn .btn {
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 740px) {
+  .project-container {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  height: 370px;
+  /* background: #fff; */
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 8px;
+  box-shadow: 10px -10px 20px #0c0a0a, -10px 10px 20px #2a2626;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  /* left: 30%; */
+  height: 160%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.box {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  /* background-color: rgb(15, 15, 15); */
+  z-index: 999;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: fit;
+  object-position: left;
+}
+.desc {
+  position: absolute;
+  background-color: #1a1919ce;
+  top: 8px;
+  width: 97.5%;
+  height: 96.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 02s .01s ease-out;
+}
+.desc h2 {
+  font-size: 3rem;
+}
+
+.desc .pro-btn {
+  gap: 10px;
+}
+
+.wrapper:hover .desc {
+  opacity: 1;
+}

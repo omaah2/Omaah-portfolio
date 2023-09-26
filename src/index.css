@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700;800&family=Nunito:wght@200;300;400;500&family=Outfit:wght@100;200;400;500;600;700;800;900&family=Poppins:ital,wght@0,500;0,600;0,800;1,300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background: #000;
+  overflow-x: hidden;
+}
+h1,
+h4,
+p,
+a {
+  color: #fff;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: #bb5858;
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-light {
+  background: transparent;
+  color: #fff;
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
+}
