@@ -9,7 +9,7 @@ const WorkCard = (props) => {
       </div>
       <div className="desc">
         <h2 style={{ color: "#fff" }}>{props.title}</h2>
-        <p>Nodejs</p>
+        <p>React</p>
         <div className="pro-btn">
           <a href={props.view} rel="noreferrer" target="_blank" className="btn">
             View
