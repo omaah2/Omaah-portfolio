@@ -1,7 +1,7 @@
 import "./HeroImg.css";
 
 import React from "react";
-import profile from "../../resource/profile1.jpeg";
+import profile from "../../resource/profile1.jpg";
 import profileLogo from "../../resource/profileBg.jpg";
 import { Link } from "react-router-dom";
 
@@ -27,8 +27,8 @@ const HeroImg = () => {
 
         <div className="hero-content_bottom">
           <h1>
-            Hi, I'm <span>Ummkhalad Oluwatosin
-              Abdulrasheed</span>
+            Hi, I'm <span>Ummkhalad Oluwatosin</span>
+            <span className="break"> Abdulrasheed</span>
           </h1>
           <h2>I'm a passionate Frontend Developer</h2>
           <p>

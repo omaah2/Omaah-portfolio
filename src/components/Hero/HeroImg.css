@@ -88,10 +88,12 @@
   font-weight: 600;
   line-height: 30px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .hero-content_bottom h1 span {
   font-family: sans-serif;
   font-style: italic;
+  display: inline-block;
   font-weight: 400;
   color: #bb5858;
   text-shadow: 3px 1px 2px #000, 2px 3px 1px #fff, 3px 1px 2px #000;
@@ -145,6 +147,7 @@
     line-height: 30px;
     margin-bottom: 20px;
   }
+
   .hero-content_bottom h2 {
     font-size: 1.2rem;
     line-height: 15px;
@@ -167,6 +170,13 @@
     line-height: 10px;
     margin-bottom: 15px;
   }
+  .hero-content_bottom h1 span {
+    margin-top: 1.2rem;
+  }
+  .hero-content_bottom h1 .break{
+    margin-top: 1.2rem;
+  }
+
   .hero-content_bottom h2 {
     font-size: 1rem;
     letter-spacing: 1.5px;
